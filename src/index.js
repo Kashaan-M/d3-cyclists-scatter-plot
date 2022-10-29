@@ -51,7 +51,7 @@ json(url).then((data) => {
       min(dataset, (d) => d['Year'] - 1),
       max(dataset, (d) => d['Year'] + 1),
     ])
-    .range([0, w - 30]);
+    .range([30, w - 30]);
 
   // "Time" on y-axis
   const yScale = scaleTime()
