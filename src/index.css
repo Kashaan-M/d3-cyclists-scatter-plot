@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+a {
+  color: black;
+  font-size: 1.2rem;
+}
+a:visited,
+a:active,
+a:hover {
+  color: inherit;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  position: relative;
+}
+h1 {
+  font-weight: normal;
+}
+svg {
+  margin: auto;
+}
+#tooltip {
+  background: hsl(166.3, 66.9%, 70.4%);
+  border: 0;
+  border-radius: 5px;
+  font-size: 12px;
+  max-height: 150px;
+  padding: 10px;
+  position: absolute;
+  box-shadow: 2px 2px 2px 2px hsla(166.3, 90%, 10%, 50%);
+  word-wrap: break-word;
+  opacity: 0;
+}
+footer {
+  font-size: 1rem;
+  margin: 1.5rem 0;
+}
+footer p {
+  text-align: center;
+}
